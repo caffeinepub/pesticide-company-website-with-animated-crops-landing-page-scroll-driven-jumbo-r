@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-increase-the-rendered-size-of-the-header-brand-logo-image-element-at-xpath-html-1-body-1-div-1-div-1-header-1-div-1-div-1-a-1-img-1-so-it-is-visibly-larger-similar-to-the-prominence-of-the-previous-brand-text-while-still-fitting-cleanly-within-the-existing-header-height-h-16-without-overflowing-or-being-clipped",
+      "featureTitle": "Increase the rendered size of the header brand logo image element at XPath /html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/a[1]/img[1] so it is visibly larger (similar to the prominence of the previous brand text), while still fitting cleanly within the existing header height (h-16) without overflowing or being clipped.",
+      "files": [
+        "frontend/src/components/nav/TopNav.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

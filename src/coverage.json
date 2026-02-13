@@ -1,0 +1,37 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-12T10:00:54.950Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-12",
+        "summary": "Increase the rendered size of the header brand logo image element at XPath /html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/a[1]/img[1] so it is visibly larger (similar to the prominence of the previous brand text), while still fitting cleanly within the existing header height (h-16) without overflowing or being clipped.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/nav/TopNav.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/nav/TopNav.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/nav/TopNav.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

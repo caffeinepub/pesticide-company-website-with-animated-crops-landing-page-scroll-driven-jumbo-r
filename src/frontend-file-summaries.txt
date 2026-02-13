@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up TanStack Router with routes for landing page (/) and shop page (/shop), wrapped in SiteLayout for consistent navigation and footer.",
+  "frontend/src/pages/LandingPage.tsx": "Landing page featuring the animated crops hero, scroll-driven Jumbo reveal, features section highlighting crop protection benefits, and a call-to-action to visit the shop.",
+  "frontend/src/pages/ShopPage.tsx": "Shop page that fetches products from the backend using React Query, displays them in a responsive grid with ProductCard components, and shows CartSummary in a sticky sidebar.",
+  "frontend/src/components/landing/CropsHero.tsx": "Full-screen hero component with canvas-based animation of swaying crops over a field background image, creating a smooth wind effect using requestAnimationFrame with proper null handling for React 19.",
+  "frontend/src/components/landing/ScrollRevealJumbo.tsx": "Scroll-driven section that reveals the Jumbo product with opacity, scale, and position transforms tied to scroll progress, featuring product image and specifications.",
+  "frontend/src/components/shop/ProductCard.tsx": "Reusable product card component displaying product image, name, tags, specs, price, and add/remove cart controls with quantity display.",
+  "frontend/src/components/shop/CartSummary.tsx": "Cart summary component showing all cart items with quantities, individual prices, total price, and actions to clear cart or proceed to checkout.",
+  "frontend/src/components/layout/SiteLayout.tsx": "Shared layout wrapper containing TopNav header, main content outlet, and footer with company info, links, social media icons, and Caffeine attribution.",
+  "frontend/src/components/nav/TopNav.tsx": "Sticky top navigation bar with enlarged Sanofil logo image (h-16 with negative margins) linking to homepage, navigation links to Home and Shop pages, and cart badge showing total item count.",
+  "frontend/src/hooks/useProducts.ts": "React Query hook that fetches all products from the backend actor with 5-minute stale time for efficient caching.",
+  "frontend/src/hooks/useScrollProgress.ts": "Custom hook that calculates normalized scroll progress (0-1) for a given container element based on viewport position, accepting nullable HTMLElement refs for type safety.",
+  "frontend/src/store/cart.ts": "Zustand store managing cart state with localStorage persistence, providing functions to add/remove items, clear cart, and calculate totals.",
+  "frontend/src/index.css": "Global styles with earthy agricultural color palette (greens, browns, tans) in OKLCH format for both light and dark modes, plus custom animation keyframes for wind effects.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with agricultural color tokens, custom fonts, enhanced shadows, and sway animation keyframes."
+}

@@ -1,2 +1,3 @@
-# pesticide-company-website-with-animated-crops-landing-page-scroll-driven-jumbo-r
-Exported from Caffeine project: Pesticide company website with animated crops landing page, scroll-driven Jumbo reveal, and shop page
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

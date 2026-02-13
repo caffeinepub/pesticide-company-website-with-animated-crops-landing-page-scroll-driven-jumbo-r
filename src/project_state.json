@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Company website for a pesticide business featuring an animated crops landing page with wind effect, a scroll-driven transition showcasing the Jumbo product, and a shopping/products page listing key products (Salaar, Megamite, Jumbo, Cruzen).",
+  "architectural_notes": [],
+  "known_issues": [
+    "Build/configuration error occurred during generation; regeneration requested."
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-coherent-visual-theme-for-the-pesticide-company-website-color-palette-typography-spacing-and-component-styling-with-an-earthy-agricultural-look-and-feel-applied-consistently-across-all-pages",
+      "title": "Create a coherent visual theme for the pesticide company website (color palette, typography, spacing, and component styling) with an earthy/agricultural look-and-feel applied consistently across all pages.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-landing-page-hero-section-featuring-a-smooth-wind-like-moving-crops-animation-continuous-motion-as-the-primary-visual-focus-on-initial-load",
+      "title": "Implement a landing page hero section featuring a smooth, wind-like moving crops animation (continuous motion) as the primary visual focus on initial load.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-scroll-driven-animation-that-transitions-from-the-animated-crops-hero-into-a-product-showcase-that-highlights-the-company-product-named-jumbo-clear-reveal-transition-tied-to-scroll-position",
+      "title": "Add scroll-driven animation that transitions from the animated crops hero into a product showcase that highlights the company product named \"Jumbo\" (clear reveal/transition tied to scroll position).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-shopping-products-page-that-lists-the-company-products-salaar-megamite-jumbo-and-cruzen-with-a-consistent-product-card-layout",
+      "title": "Create a shopping/products page that lists the company products: Salaar, Megamite, Jumbo, and Cruzen, with a consistent product card layout.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-basic-shopping-interactions-on-the-shop-page-ability-to-add-remove-products-to-a-local-cart-and-view-a-cart-summary-item-count-and-subtotal-without-requiring-payment-processing",
+      "title": "Add basic shopping interactions on the shop page: ability to add/remove products to a local cart and view a cart summary (item count and subtotal) without requiring payment processing.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-connect-the-frontend-shop-page-to-the-backend-product-catalog-api-using-react-query-for-loading-and-caching-product-data",
+      "title": "Connect the frontend shop page to the backend product catalog API using React Query for loading and caching product data.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-simple-site-structure-with-at-least-a-landing-route-and-a-shop-route-including-a-top-navigation-element-or-equivalent-to-move-between-them",
+      "title": "Add a simple site structure with at least a landing route and a shop route, including a top navigation element (or equivalent) to move between them.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-image-assets-to-the-frontend-as-static-files-and-render-them-in-the-landing-and-shop-pages-as-appropriate",
+      "title": "Add generated image assets to the frontend as static files and render them in the landing and shop pages as appropriate.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-top-left-brand-area-in-the-header-topnav-by-replacing-the-current-logo-icon-lucide-sprout-svg-and-the-adjacent-brand-text-agriprotect-with-the-uploaded-logo-image-file-sanofillogo-removebg-preview-png-while-keeping-the-brand-area-as-a-clickable-control-that-navigates-to-the-homepage-route-from-any-page",
+      "title": "Update the top-left brand area in the header (TopNav) by replacing the current logo icon (Lucide Sprout SVG) and the adjacent brand text (\"AgriProtect\") with the uploaded logo image file (SanofilLogo-removebg-preview.png), while keeping the brand area as a clickable control that navigates to the homepage route \"/\" from any page.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-adjust-the-sizing-and-spacing-of-the-new-header-logo-image-so-it-fits-cleanly-within-the-existing-header-height-h-16-does-not-overflow-and-maintains-visually-balanced-padding-gap-relative-to-surrounding-nav-elements",
+      "title": "Adjust the sizing and spacing of the new header logo image so it fits cleanly within the existing header height (h-16), does not overflow, and maintains visually balanced padding/gap relative to surrounding nav elements.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-increase-the-rendered-size-of-the-header-brand-logo-image-element-at-xpath-html-1-body-1-div-1-div-1-header-1-div-1-div-1-a-1-img-1-so-it-is-visibly-larger-similar-to-the-prominence-of-the-previous-brand-text-while-still-fitting-cleanly-within-the-existing-header-height-h-16-without-overflowing-or-being-clipped",
+      "title": "Increase the rendered size of the header brand logo image element at XPath /html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/div[1]/a[1]/img[1] so it is visibly larger (similar to the prominence of the previous brand text), while still fitting cleanly within the existing header height (h-16) without overflowing or being clipped.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Landing page with smooth moving crops animation (wind effect)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Scroll-driven motion leading into a transition that reveals/highlights the 'Jumbo' product",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Shopping/products page listing company products (Salaar, Megamite, Jumbo, Cruzen)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Implement backend product catalog storage and query APIs in the single Motoko main actor to serve the product list (Salaar, Megamite, Jumbo, Cruzen) to the frontend.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Replace current navbar logo with provided Agriproject logo image, scale/adjust spacing, and make it a clickable button linking to the homepage (\"/\") from all pages.",
+      "reqIds": [],
+      "status": "in_progress"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Pesticide company website with animated crops landing page, scroll-driven Jumbo reveal, and shop page",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

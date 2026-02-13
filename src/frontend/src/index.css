@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Earthy agricultural color palette */
+        --background: 0.98 0.01 110;
+        --foreground: 0.20 0.02 130;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.20 0.02 130;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.20 0.02 130;
+        
+        /* Primary: Rich earth green */
+        --primary: 0.45 0.12 140;
+        --primary-foreground: 0.98 0.01 110;
+        
+        /* Secondary: Warm tan */
+        --secondary: 0.88 0.04 80;
+        --secondary-foreground: 0.25 0.03 130;
+        
+        --muted: 0.92 0.02 110;
+        --muted-foreground: 0.50 0.03 130;
+        
+        /* Accent: Fresh leaf green */
+        --accent: 0.65 0.15 130;
+        --accent-foreground: 0.98 0.01 110;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0.01 110;
+        
+        --border: 0.88 0.02 110;
+        --input: 0.88 0.02 110;
+        --ring: 0.45 0.12 140;
+        
+        --chart-1: 0.60 0.18 140;
+        --chart-2: 0.55 0.15 80;
+        --chart-3: 0.50 0.12 160;
+        --chart-4: 0.65 0.20 120;
+        --chart-5: 0.70 0.16 100;
+    }
+
+    .dark {
+        --background: 0.18 0.02 130;
+        --foreground: 0.95 0.01 110;
+        
+        --card: 0.22 0.02 130;
+        --card-foreground: 0.95 0.01 110;
+        
+        --popover: 0.20 0.02 130;
+        --popover-foreground: 0.95 0.01 110;
+        
+        /* Primary: Bright earth green for dark mode */
+        --primary: 0.65 0.15 135;
+        --primary-foreground: 0.15 0.02 130;
+        
+        --secondary: 0.30 0.03 120;
+        --secondary-foreground: 0.95 0.01 110;
+        
+        --muted: 0.28 0.02 130;
+        --muted-foreground: 0.65 0.03 120;
+        
+        --accent: 0.55 0.14 125;
+        --accent-foreground: 0.95 0.01 110;
+        
+        --destructive: 0.60 0.24 25;
+        --destructive-foreground: 0.15 0.02 130;
+        
+        --border: 0.30 0.02 130;
+        --input: 0.30 0.02 130;
+        --ring: 0.55 0.14 135;
+        
+        --chart-1: 0.55 0.18 140;
+        --chart-2: 0.60 0.15 80;
+        --chart-3: 0.50 0.12 160;
+        --chart-4: 0.65 0.20 120;
+        --chart-5: 0.70 0.16 100;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+        
+        * {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+}
+
+/* Custom wind animation keyframes */
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    75% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-sway {
+    animation: sway 3s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}

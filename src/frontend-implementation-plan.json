@@ -1,0 +1,23 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Increase header logo image size while preserving h-16 header fit",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "summary": "Make the header brand logo <img> render larger while remaining fully contained within the existing h-16 header height, changing only that <img> element.",
+      "acceptanceCriteria": [
+        "The header logo image is noticeably larger than before and is easily readable at a glance.",
+        "The logo image remains fully contained within the header (no vertical overflow/clipping) across common viewport widths.",
+        "Only the selected logo <img> element styling/attributes are modified; no unrelated header/nav elements are changed."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/nav/TopNav.tsx",
+          "operation": "modify",
+          "description": "Adjust only the selected header logo <img> element’s Tailwind classes to increase its rendered size while staying within the h-16 header (e.g., increase the img height and use compensating negative vertical margins so it fits cleanly despite the parent link’s existing vertical padding). Do not change surrounding header/nav/link layout or other elements."
+        }
+      ]
+    }
+  ]
+}
